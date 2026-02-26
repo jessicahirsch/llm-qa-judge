@@ -44,8 +44,15 @@ You can swap in any domain (Cypress, Playwright, SRE, etc.) by changing `questio
 pip install -r requirements.txt
 ```
 
-3. Add a small QA dataset under `datasets/` following the schema above.
-4. Implement or extend the runner in `llm_judge/` to:
+3. Run
+```bash
+./llm-judge
+```
+
+### Contribute
+
+1. Add a small QA dataset under `datasets/` following the schema above.
+2. Implement or extend the runner in `llm_judge/` to:
    - Load the dataset
    - Call your chosen model to generate answers
    - Call a judge model that scores answers against the rubric
