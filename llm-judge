@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python3 -m llm_judge.run_eval --dataset datasets/example_qa_small.jsonl --model gpt-4.1 "$@"
